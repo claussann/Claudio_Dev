@@ -1,5 +1,5 @@
 import { Button, Modal } from "react-bootstrap"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import emailjs from '@emailjs/browser';
 
 type Props = {
@@ -7,10 +7,24 @@ type Props = {
     closeModal: () => void
 }
 function EmailModal({ openModal, closeModal }: Props) {
+    const [email, setEmail] = useState("");
+    const [emailError, setEmailError] = useState("");
+
+    const validateEmail = (email: string) => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
 
     const form = useRef<HTMLFormElement>(null);
     const sendMail = (e: any) => {
         e.preventDefault();
+
+        if (!validateEmail(email)) {
+            setEmailError("Invalid email address");
+            return;
+        } else {
+            setEmailError("");
+        }
 
         if (!form.current) return;
         emailjs
@@ -41,20 +55,36 @@ function EmailModal({ openModal, closeModal }: Props) {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{ width: "100%", background: "linear-gradient(to left, rgb(12, 12, 12), rgb(54, 53, 53))" }}>
-                    <div className="m-2 form-group col-12">
+                    <div className="form-group col-12">
                         <form ref={form} onSubmit={sendMail}>
+                            <input type="email" 
+                            className="form-control mt-2 mb-2" 
+                            placeholder="Insert your email..." 
+                            name="name"
+                            style={{
+                                background: "linear-gradient(to left, rgb(12, 12, 12), rgb(54, 53, 53))",
+                                color: "white",
+                                width: "90%",
+                                marginLeft:"auto",
+                                marginRight:"auto"
+                            }}
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}/>
                             <textarea style={{
-                                width: "100%",
+                                width: "90%",
                                 height: "200px",
                                 background: "linear-gradient(to left, rgb(12, 12, 12), rgb(54, 53, 53))",
-                                color: "white"
+                                color: "white",
+                                marginLeft:"auto",
+                                marginRight:"auto"
                             }}
-                                className="form-control"
-                                placeholder="Your message here"
-                                name="message">
+                            className="form-control"
+                            placeholder="Your message here"
+                            name="message">
                             </textarea>
+                            {emailError && <p style={{ color: "red" }}>{emailError}</p>}
                             <div className="col-12 d-flex justify-content-center">
-                                <Button className="mt-2 col-12 col-md-3" variant="outline-light" type="submit">
+                                <Button className="mt-3 col-12 col-md-3" variant="outline-light" type="submit">
                                     Send email
                                 </Button>
                             </div>
