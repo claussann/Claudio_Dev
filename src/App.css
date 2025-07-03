@@ -124,6 +124,17 @@
     }
 }
 
+#music {
+    background-image: url("img_rock.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#eCommerce {
+    background-image: url("eCommerce.png");
+    background-size: cover;
+    background-position: center;
+}
 @media screen and (max-width: 768px) {
     #avatar {
         height: 350px;
@@ -134,4 +145,5 @@
         margin-top: 30px;
         width: 200px;
     }
+    
 }
