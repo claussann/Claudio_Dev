@@ -135,6 +135,12 @@
     background-size: cover;
     background-position: center;
 }
+
+#fishing_inventory {
+    background-image: url("Pesca.png");
+    background-size: cover;
+    background-position: center;
+}
 @media screen and (max-width: 768px) {
     #avatar {
         height: 350px;
