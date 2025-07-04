@@ -19,6 +19,13 @@
     border-radius: 10px;
 }
 
+.projects {
+    background: linear-gradient(132deg, #000000, #595959, #000000, #595959, #000000, #595959);
+    background-size: 400% 400%;
+    border-radius: 10px;
+    animation: BackgroundGradient 5s linear infinite alternate;
+}
+
 @keyframes BackgroundGradient {
     0% {
         background-position: 0% 50%;
