@@ -4,6 +4,8 @@ import Projects from "../Components/Projects"
 import WhoIAm from "../Components/WhoIAm"
 
 import { useState } from "react"
+
+import '../App.css'
 function Home() {
     const [showModal, setShowModal] = useState(false);
     const [showImage, setShowImage] = useState("flex");
@@ -19,9 +21,9 @@ function Home() {
         setShowImage("flex")
     }
     return (
-        <div className="container">
+        <div id="home" className="container">
             <Header title="Claudio_Dev" />
-            <WhoIAm imgClass={imgClass} click={openModal} closeModal={closeModal} />
+            {!showModal && <WhoIAm imgClass={imgClass} click={openModal} closeModal={closeModal} />}
             {!showModal && <Projects />}
             {showModal && <Me onClose={closeModal} openModal={showModal} />}
         </div>

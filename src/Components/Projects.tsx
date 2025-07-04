@@ -6,7 +6,7 @@ function Projects(): any {
 
     const goProjects = () => navigate("/projects")
     return (
-        <div id="projects" className="container mt-5 p-3 border border-light">
+        <div id="projects" className="container mt-5 mb-5 p-3 border border-light">
         <div className="row mt-4 text-center">
             <h1>Progetti</h1>
             <h4>Vi presento qualche mio progetto personale...</h4>

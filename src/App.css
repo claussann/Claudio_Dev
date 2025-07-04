@@ -1,3 +1,11 @@
+#home, #projectsPage {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
 #header {
     border: 1px solid grey;
     background: linear-gradient(132deg, #000000, #595959, #000000, #595959, #000000, #595959);
@@ -23,6 +31,16 @@
     background: linear-gradient(132deg, #000000, #595959, #000000, #595959, #000000, #595959);
     background-size: 400% 400%;
     border-radius: 10px;
+    animation: BackgroundGradient 5s linear infinite alternate;
+}
+
+#logo {
+    background: linear-gradient(132deg, #000000, #141414, #000000, #141414, #000000, #141414);
+    background-size: 400% 400%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    padding: 20px;
     animation: BackgroundGradient 5s linear infinite alternate;
 }
 
@@ -173,6 +191,82 @@
     background-size: cover;
     background-position: center;
 }
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
 
 @media screen and (max-width: 768px) {
     #avatar {

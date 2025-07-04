@@ -7,12 +7,12 @@ import '../App.css'
 function ProjectsPage() {
     const [fishingModal, setFishingModal] = useState(false);
     const navigate = useNavigate()
-    const goToHOme = () => navigate("/")
+    const goToHOme = () => navigate("/home")
 
     const openFishingModal = () => setFishingModal(true)
     const closeFishingModal = () => setFishingModal(false)
     return (
-        <div className="container">
+        <div id="projectsPage" className="container">
             <div className="projects row border border-light mt-3 text-center d-flex" style={{ borderRadius: "10px" }}>
                 <div className="col-9">
                     <h1>Progetti</h1>

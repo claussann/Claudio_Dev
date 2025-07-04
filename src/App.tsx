@@ -1,9 +1,10 @@
+import StarterLogo from './Pages/StarterLogo'
+
 import './App.css'
-import Home from './Pages/Home'
 function App() {
   return (
     <>
-    <Home />
+    <StarterLogo />
     </>
   )
 }
