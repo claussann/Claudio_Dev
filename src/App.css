@@ -174,24 +174,6 @@
     }
 }
 
-#music {
-    background-image: url("img_rock.png");
-    background-size: cover;
-    background-position: center;
-}
-
-#eCommerce {
-    background-image: url("eCommerce.png");
-    background-size: cover;
-    background-position: center;
-}
-
-#fishing_inventory {
-    background-image: url("Pesca.png");
-    background-size: cover;
-    background-position: center;
-}
-
 .zoomIn {
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
