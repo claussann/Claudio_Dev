@@ -10,6 +10,7 @@ function WhoIAm({imgClass, click}: Props): any {
 
     
     return (
+        <div id="WhoIAm" className="container border border-light mt-3">
         <div className="row mt-2 w-75 mx-auto">
             <div className={imgClass}>
                 <img id="avatar" className="img-fluid" src="avatar.png" alt="Avatar" title="Avatar" />
@@ -17,6 +18,7 @@ function WhoIAm({imgClass, click}: Props): any {
             <div className={imgClass}>
                 <img id="me" onClick={click} className="img-fluid" src="chiSono.png" alt="chi sono" title="chi sono" />
             </div>
+        </div>
         </div>
     )
 }
