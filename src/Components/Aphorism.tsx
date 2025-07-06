@@ -6,7 +6,6 @@ type Quote = {
 }
 function Aphorism(){
     const [randomQuote, setRandomQuote] = useState<Quote | null>(null)
-    const [translate, setTranslate] = useState<string | null>(null)
 
     useEffect(() => {
         const fetchData = async () => {
