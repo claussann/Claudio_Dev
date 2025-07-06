@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Music_Project_Demo",
+            "description": "Una web app React a tema musicale che simula una piattaforma interattiva. Include routing dinamico, gestione stato con hook, form, e interazione con localStorage. Offre una fake login, una home con card dinamiche dei generi musicali e pagine per ogni genere dove puoi salvare e gestire le tue band preferite."
+        },
+        {
+            "id": 2,
+            "title": "eCommerce_Project_Demo",
+            "description": "Web app di e-commerce fittizio sviluppata in React per scopi portfolio. Include prodotti dinamici con Card responsive, carousel personalizzato, barra di ricerca e salvataggio del carrello in localStorage. Utilizza Redux per la gestione dei dati, Material UI e API REST."
+        },
+        {
+            "id": 3,
+            "title": "Fishing_Inventory_Video",
+            "description": "Applicazione inventario per attrezzatura da pesca, nata dalla passione personale e sviluppata con React, TypeScript, Bootstrap e PHP. Permette di aggiungere, visualizzare e gestire prodotti, con caricamento immagini, meteo integrato via API, e design responsive. Utilizza MySQL per il database e componenti React riutilizzabili."
+        }
+    ]
+}
