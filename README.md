@@ -1,19 +1,36 @@
-# Claudio_Dev
-My Portfolio WebSite
-Il mio Sito Web :D
-=======
+# 👨‍💻 Claudio_Dev - Portfolio WebSite
 
-Tecnologie Utilizzate
+Benvenuto nel mio sito portfolio personale!  
+Questa web app mostra i miei progetti, le mie competenze e offre un modo per contattarmi direttamente.
 
-# React.js
-Ho creato questa applicazione React installandolo con Vite.
+---
 
-# Bootstrap/ReactBootstrap
-Per il design Responsive Ho utilizzato Boostrap e React Bootstrap
+## 🚀 Tecnologie Utilizzate
 
-# React Router
-Ho utilizzato React Router per rendere l'app multipagina 
+### 🧱 HTML & CSS
+- Struttura semantica delle pagine
+- Responsive design con media query per schermi < 768px
+- Animazioni CSS per migliorare l’esperienza utente
 
-# EmailJS 
-Ho installato le API di EmailJS per il form "Contact Me" con l'icona email.
+### ⚙️ JavaScript & TypeScript
+- Logica dinamica per interazioni dell’utente
+- Rendering di componenti con metodi funzionali come `.map()`  
+- Uso del tipaggio statico con TypeScript
 
+### 🗂️ JSON
+- File JSON utilizzati per contenere e importare dati (es. progetti, immagini) in modo dinamico
+
+### ⚛️ React.js + Vite
+- Applicazione creata con Vite per un ambiente di sviluppo rapido
+- Componenti modulari e riutilizzabili
+
+### 🎨 Bootstrap & React-Bootstrap
+- Layout responsive e griglia fluida
+- Componenti come **Carousel** e **Modal** per visualizzare contenuti dinamici (es. immagini, descrizioni)
+
+### 🔀 React Router
+- Routing client-side per una navigazione multipagina fluida
+
+### 📧 EmailJS
+- Integrazione del servizio EmailJS per il modulo di contatto "Contact Me"
+- Invio diretto di email senza backend
