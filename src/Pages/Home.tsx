@@ -2,6 +2,7 @@ import Header from "../Components/Header"
 import Me from "../Components/Me";
 import Projects from "../Components/Projects"
 import WhoIAm from "../Components/WhoIAm"
+import Clock from "../Components/Clock";
 
 import { useState } from "react"
 
@@ -23,6 +24,7 @@ function Home() {
     return (
         <div id="home" className="container">
             <Header title="Claudio_Dev" />
+            {!showModal && <Clock />}
             {!showModal && <WhoIAm imgClass={imgClass} click={openModal} closeModal={closeModal} />}
             {!showModal && <Projects />}
             {showModal && <Me onClose={closeModal} openModal={showModal} />}

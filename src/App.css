@@ -21,6 +21,13 @@
     border-radius: 10px;
 }
 
+#ora {
+    background: linear-gradient(132deg, #000000, #595959, #000000, #595959, #000000, #595959);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 5s linear infinite alternate;
+    border-radius: 10px;
+}
+
 #WhoIAm {
     background: linear-gradient(132deg, #000000, #595959, #000000, #595959, #000000, #595959);
     background-size: 400% 400%;
