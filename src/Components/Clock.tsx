@@ -20,8 +20,8 @@ function Clock() {
     })
 
     return (
-        <div className="row d-flex justify-content-center mt-5 mb-5">
-            <div id="ora" className="col-4 text-center border border-light">
+        <div className="col-12 d-flex justify-content-end mt-5 mb-5">
+            <div id="ora" className="col-12 col-md-4 text-center border border-light">
                 <h1>{giorno}/{mese}/{anno} - {ore}:{minuti}:{secondi}</h1>
             </div>
         </div>

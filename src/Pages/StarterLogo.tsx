@@ -19,7 +19,7 @@ function StarterLogo() {
     }
 
     return (
-        <div className="container">
+        <div className="container mt-1">
             <div className="row d-flex justify-content-center">
                 <div id='logo' className="col-8 d-flex justify-content-center align-item-center border border-light">
                     <img className={imgClass} src="Logo.png" alt="logo" />

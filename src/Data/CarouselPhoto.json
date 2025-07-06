@@ -1,0 +1,34 @@
+{
+    "photo": [
+        {
+            "id": 1,
+            "src": "https://claudio-dev.netlify.app/Logo.png",
+            "alt": "logo photo"
+        },
+        {
+            "id": 2,
+            "src": "https://music-portfolio-project.netlify.app/img_electronic.png",
+            "alt": "music photo 2"
+        },
+        {
+            "id": 3,
+            "src": "https://music-portfolio-project.netlify.app/img_reggae.png",
+            "alt": "music photo 3"
+        },
+        {
+            "id": 4,
+            "src": "https://claudio-dev.netlify.app/eCommerce.png",
+            "alt": "eCommerce photo"
+        },
+        {
+            "id": 5,
+            "src": "https://claudio-dev.netlify.app/Pesca.png",
+            "alt": "fishing photo"
+        },
+        {
+            "id": 6,
+            "src": "https://music-portfolio-project.netlify.app/img_rock.png",
+            "alt": "music photo 1"
+        }
+    ]
+}

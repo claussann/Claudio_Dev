@@ -8,7 +8,7 @@ type HeaderProps = {
 
 function Header({ title }: HeaderProps) {
     const bigScreen = (
-        <div className="row mt-5">
+        <div className="row mt-5 mb-5">
             <div id='header' className="col-12 text-center d-flex justify-content-center p-1 align-items-center">
                 <div className='col-12 col-md-9'>
                     <h1>{title}</h1>
@@ -18,7 +18,7 @@ function Header({ title }: HeaderProps) {
         </div>)
 
     const smallScreen = (
-        <div className="row mt-5">
+        <div className="row mt-5 mb-5">
             <div id='header' className="col-12 text-center d-flex justify-content-center p-1 align-items-center">
                 <div className='col-12 col-md-9'>
                     <h1>{title}</h1>

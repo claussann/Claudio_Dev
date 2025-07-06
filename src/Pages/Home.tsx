@@ -3,6 +3,7 @@ import Me from "../Components/Me";
 import Projects from "../Components/Projects"
 import WhoIAm from "../Components/WhoIAm"
 import Clock from "../Components/Clock";
+import PhotoCarousel from "../Components/PhotoCarousel"
 
 import { useState } from "react"
 
@@ -25,6 +26,7 @@ function Home() {
         <div id="home" className="container">
             <Header title="Claudio_Dev" />
             {!showModal && <WhoIAm imgClass={imgClass} click={openModal} closeModal={closeModal} />}
+            {!showModal && <PhotoCarousel />}
             {!showModal && <Projects />}
             {!showModal && <Clock />}
             {showModal && <Me onClose={closeModal} openModal={showModal} />}

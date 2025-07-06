@@ -26,7 +26,7 @@ function DescriptionModal({ title, openModal, onClose, description }: Descriptio
                     </div>
                 </Modal.Body>
                 <Modal.Footer style={{ background: "linear-gradient(to left, rgb(12, 12, 12), rgb(54, 53, 53))" }}>
-                    <Button variant="dark" onClick={onClose}>
+                    <Button variant="outline-light" onClick={onClose}>
                         Close
                     </Button>
                 </Modal.Footer>
