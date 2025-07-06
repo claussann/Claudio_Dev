@@ -34,3 +34,6 @@ Questa web app mostra i miei progetti, le mie competenze e offre un modo per con
 ### 📧 EmailJS
 - Integrazione del servizio EmailJS per il modulo di contatto "Contact Me"
 - Invio diretto di email senza backend
+
+### 🌐 Api Rest
+- Generazione frasi Randomiche da API esterno gratuito con chiamata Fetch `https://dummyjson.com/quotes`

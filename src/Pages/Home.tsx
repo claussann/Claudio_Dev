@@ -8,6 +8,7 @@ import PhotoCarousel from "../Components/PhotoCarousel"
 import { useState } from "react"
 
 import '../App.css'
+import Aphorism from "../Components/Aphorism";
 function Home() {
     const [showModal, setShowModal] = useState(false);
     const [showImage, setShowImage] = useState("flex");
@@ -28,6 +29,7 @@ function Home() {
             {!showModal && <WhoIAm imgClass={imgClass} click={openModal} closeModal={closeModal} />}
             {!showModal && <PhotoCarousel />}
             {!showModal && <Projects />}
+            {!showModal && <Aphorism />}
             {!showModal && <Clock />}
             {showModal && <Me onClose={closeModal} openModal={showModal} />}
         </div>
