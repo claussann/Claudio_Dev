@@ -24,9 +24,9 @@ function Home() {
     return (
         <div id="home" className="container">
             <Header title="Claudio_Dev" />
-            {!showModal && <Clock />}
             {!showModal && <WhoIAm imgClass={imgClass} click={openModal} closeModal={closeModal} />}
             {!showModal && <Projects />}
+            {!showModal && <Clock />}
             {showModal && <Me onClose={closeModal} openModal={showModal} />}
         </div>
     )
