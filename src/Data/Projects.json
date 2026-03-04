@@ -12,8 +12,8 @@
         },
         {
             "id": 3,
-            "title": "Fishing_Inventory_Video",
-            "description": "Applicazione inventario per attrezzatura da pesca, nata dalla passione personale e sviluppata con React, TypeScript, Bootstrap e PHP. Permette di aggiungere, visualizzare e gestire prodotti, con caricamento immagini, meteo integrato via API, e design responsive. Utilizza MySQL per il database e componenti React riutilizzabili."
+            "title": "Fishing_Inventory",
+            "description": "PWA diario da pesca. Consente di aggiungere, modificare e tenere traccia di attrezzatura, esche e accessori, permette di effettuare foto a catture, salvare spot con locazione GPS e scrivere delle note su ogni uscita. È ideale per appassionati di pesca che vogliono salvare ogni uscita e ogni cattura digitalmente."
         }
     ]
 }
